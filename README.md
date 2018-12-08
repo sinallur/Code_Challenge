@@ -1,5 +1,5 @@
 
-1) #Software Requirements:
+##Software Requirements:
 
 Python3 Version 3.7, PIP, IDE: Pycharm 
 
@@ -10,7 +10,7 @@ $pip install pyfiglet
 $pip install click
 
 
-2) Functional Requirements:
+##Functional Requirements:
 
  2.1) #The app should prompt the user for a search string.
       #(you may use popular search strings like 'dogs','cats','New York', ‘Java’... etc.)
@@ -21,53 +21,61 @@ $pip install click
  
  Execution:
  
- To execute this
-  In the terminal
  $python3 books.py search python
- 
  OUTPUT: List of books available for given Search: 20
   
- When max value is dynamically given as 40
+ :: When max value is dynamically given as 40
  
  $python3 books.py search python 40
- 
  OUTPUT: List of books available for given Search: 40
  
  $python3 books.py search Java
- 
  #OUTPUT: List of books available for given Search: Java
  
+
+
+
+
+
 
 2.2) #The app should allow a user to add specific books from the search results to a virtual bookshelf
 
 from the class books.py
-
 add(id): method allows to add the books to the virtual bookshelf with the book id
 
 Execution:
 
- $python3 books.py add
-   
+ $python3 books.py add   
    Please enter a Book Id to add it in to your shelf: diqHjRjMhW0C
    
  OUTPUT: Added Successfully
  
-  $python3 books.py add
-   
+  $python3 books.py add 
    Please enter a Book Id to add it in to your shelf: OmeDCwAAQBAJ
    
  OUTPUT: Added Successfully
  
 
+
+
+
+
+
 2.3) #The app should also be able to persist bookshelf to disk
 
 2.4) #The app should be able to load virtual bookshelf from step #3
+
 
 A json file bookshelf.json is added each time we add the book into the list. 
 Please check the file bookshelf.json for the disk content.
 
 File is saved in local once we initiate adding a book. 
 Every time a book is added we update the list.
+
+
+
+
+
 
 
 
@@ -78,12 +86,16 @@ from books.py class
 mybooks: method allows to display the list of books added to the virtual bookshelf
 
 Execution:
-
 $ python3 books.py mybooks
-
 #OUTPUT: 
 Book Name: Data Wrangling with Python, No Of Pages: 508
 Book Name: Wicked Cool Java, No Of Pages: 224
+
+
+
+
+
+
 
 
 
@@ -94,9 +106,7 @@ from the class books.py
 mybooks(sortby): method allows to sort the list based on the given parameters
 
 Execution:
-
 $python3 books.py mybooks pageCount
-
 OUTPUT:
 Book Name: Wicked Cool Java, No Of Pages: 224
 Book Name: Data Wrangling with Python, No Of Pages: 508
@@ -104,10 +114,17 @@ Book Name: Data Wrangling with Python, No Of Pages: 508
 "List is sorted based on the pageCount" 
 
 
+
+
+
+
 Test Code:
 
 Pytest:
 test_books.py has been written to work on unit testing and partly functional test cases.
+
+
+
 
 
 3) #Execution Help
