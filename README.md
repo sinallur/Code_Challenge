@@ -12,60 +12,56 @@ $pip install click
 
 2) # Functional Requirements:
 
- # 2.1) The app should prompt the user for a search string.
+ 2.1) #The app should prompt the user for a search string.
+      #(you may use popular search strings like 'dogs','cats','New York', ‘Java’... etc.)
 
  from the class books.py 
  search(query,max) method allows to search any query (eg: 'Python') 
     along with the max value (default/minimum here I have given is 20)
  
- #Execution:
+ Execution:
  
  To execute this
   In the terminal
  $python3 books.py search python
  
- #OUTPUT: List of books available for given Search: 20
+ OUTPUT: List of books available for given Search: 20
   
  When max value is dynamically given as 40
  
  $python3 books.py search python 40
  
- #OUTPUT: List of books available for given Search: 40
+ OUTPUT: List of books available for given Search: 40
  
- 
- 
-#  (you may use popular search strings like 'dogs','cats','New York', ‘Java’... etc.)
-
  $python3 books.py search Java
  
  #OUTPUT: List of books available for given Search: Java
  
 
-# 2.2) The app should allow a user to add specific books from the search results to a virtual bookshelf
+2.2) #The app should allow a user to add specific books from the search results to a virtual bookshelf
 
 from the class books.py
 
 add(id): method allows to add the books to the virtual bookshelf with the book id
 
-#Execution:
+Execution:
 
  $python3 books.py add
    
    Please enter a Book Id to add it in to your shelf: diqHjRjMhW0C
    
- #OUTPUT: Added Successfully
+ OUTPUT: Added Successfully
  
   $python3 books.py add
    
    Please enter a Book Id to add it in to your shelf: OmeDCwAAQBAJ
    
- #OUTPUT: Added Successfully
+ OUTPUT: Added Successfully
  
 
+2.3) #The app should also be able to persist bookshelf to disk
 
-# 2.3) The app should also be able to persist bookshelf to disk
-
-# 2.4) The app should be able to load virtual bookshelf from step #3
+2.4) #The app should be able to load virtual bookshelf from step #3
 
 A json file bookshelf.json is added each time we add the book into the list. 
 Please check the file bookshelf.json for the disk content.
@@ -75,13 +71,13 @@ Every time a book is added we update the list.
 
 
 
-# 2.5) The user should be able to display the books in the virtual bookshelf
+2.5) #The user should be able to display the books in the virtual bookshelf
 
 from books.py class
 
 mybooks: method allows to display the list of books added to the virtual bookshelf
 
-#Execution:
+Execution:
 
 $ python3 books.py mybooks
 
@@ -91,17 +87,17 @@ Book Name: Wicked Cool Java, No Of Pages: 224
 
 
 
-# 2.6) sorted by price, avg rating, rating count, published date, or page count
+2.6) #sorted by price, avg rating, rating count, published date, or page count
 
 from the class books.py
 
 mybooks(sortby): method allows to sort the list based on the given parameters
 
-#Execution:
+Execution:
 
 $python3 books.py mybooks pageCount
 
-#OUTPUT:
+OUTPUT:
 Book Name: Wicked Cool Java, No Of Pages: 224
 Book Name: Data Wrangling with Python, No Of Pages: 508
 
@@ -110,7 +106,7 @@ Book Name: Data Wrangling with Python, No Of Pages: 508
 
 Test Code:
 
-#Pytest:
+Pytest:
 test_books.py has been written to work on unit testing and partly functional test cases.
 
 
