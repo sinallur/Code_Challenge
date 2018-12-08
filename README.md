@@ -10,7 +10,7 @@ $pip install pyfiglet
 $pip install click
 
 
-2) # Functional Requirements:
+2) Functional Requirements:
 
  2.1) #The app should prompt the user for a search string.
       #(you may use popular search strings like 'dogs','cats','New York', ‘Java’... etc.)
